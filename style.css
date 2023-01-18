@@ -1,0 +1,612 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;1,400&family=Poppins:ital,wght@0,500;0,600;0,700;1,400&family=Quicksand:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    width: 100%;
+    
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  
+    border-bottom: 3px solid navy;
+
+}
+.image{
+    display: flex;
+    align-items: center;
+}
+.image img{
+    width: 160px;
+}
+.links{
+    display: flex;
+    align-items: center;
+
+}
+.links a{
+    margin: 20px;
+    font-size: 17px;
+    color: darkslategray;
+    padding: 5px 20px;
+    transition: 0.5s ease-in-out;
+    border-radius: 6px;
+
+}
+.links a:nth-child(4){
+    margin: 0;
+}
+.links a:hover{
+  
+    background: linear-gradient(71deg, rgba(0,8,78,1) 42%, rgba(0,69,255,1) 90%);
+    color: white;
+ 
+}
+nav .icon{
+    display: none;
+}
+nav .icon .nav-openbtn{
+color: black;
+font-size: 30px;
+
+}
+.chat{
+    background: navy;
+    color: white !important;
+}
+
+.hello{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.intro{
+    max-width: 1000px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+.intro h2{
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+.intro h2 span{
+   color: navy;
+}
+.intro-img{
+    max-width: 1350px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-img img{
+    max-width: 900px;
+    width: 90%;
+    display: flex;
+    object-fit: contain;
+    object-position: center;
+    margin: auto;
+    margin-top: -130px;
+}
+
+.contact-box{
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(71deg, rgba(0,8,78,1) 42%, rgba(0,69,255,1) 90%);
+    border-radius: 10px;
+    margin: auto;
+    flex-direction: column;
+    padding: 20px 0;
+    margin-top: -60px;
+    /* margin-bottom: 50px; */
+   
+}
+.contact-box h2{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+.contact-box a{
+    color: navy;
+    background-color: white;
+    width: 170px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+.contact-box a:hover{
+    background-color: lightslategray;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+.contact-box .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+ .icons i{
+    font-size: 30px;
+    color: white;
+    margin: 0 5px;
+}
+
+.skills{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    /* background-color: lightslategray; */
+  
+}
+.skills h3{
+    font-size: 2rem;
+    font-weight: 500;
+    color: navy;
+    text-align: center;
+    margin-top: 10px;
+   
+}
+.skill-con{
+    
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+
+}
+.skill-con .skill-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 40px;
+}
+.skill-name i{
+    font-size: 50px;
+    color: lightslategray
+}
+.skill-name p{
+    font-size: 18px;
+    font-weight: 600;
+    color: darkblue;
+}
+
+.services{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(71deg, rgba(0,8,78,1) 42%, rgba(0,69,255,1) 90%);
+
+}
+.services h2{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+}
+.servi-con{
+    width: 1250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: -160px;
+}
+.servi-con .service{
+    width: 300px;
+    height: 400px;
+    margin: 40px 30px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 15px;
+    box-shadow:  5px 5px 10px  darkslategray;
+
+}
+.service:hover{
+    transform: translateY(-8px);
+    transition: 0.5s ease-in;
+}
+.service img{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.service h3{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+.service p{
+    text-align: center;
+    font-weight: 500;
+}
+
+.members{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: grey; */
+}
+.members h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 12%;
+}
+.members-con{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px o;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 3%;
+    
+}
+.members-con .member{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 40px ;
+}
+.member img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 5px solid navy;
+    
+}
+.member h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.member p{
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 5px;
+    color: slategrey;
+}
+.member a{
+    text-align: center;
+    padding: 5px 15px;
+    background-color: navy;
+    color: white;
+    border-radius: 30px;
+    margin: 5px;
+   
+}
+.member a:hover{
+    transition: 0.5s ease-in-out;
+    background: linear-gradient(71deg, rgba(0,8,78,1) 42%, rgba(0,69,255,1) 90%);
+}
+
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(71deg, rgba(0,8,78,1) 42%, rgba(0,69,255,1) 90%);
+}
+.project-title{
+  margin-top: 20px;
+   margin-bottom: 10px;
+   margin-left: 60px;
+}
+.project-title h2{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: left;
+}
+.port-con{
+    margin-bottom: 20px;
+}
+.swiper-slide{
+    /* height: 100vh; */
+    width: 100%;
+    padding: 20px;
+    /* background-color: cadetblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    
+}
+.swiper-slide img{
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow:  5px 5px 10px  black;
+    border-radius: 10px;
+}
+.content-swipe{
+    /* position: fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.content-swipe h2{
+    font-size: 1.8rem;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    
+}
+.content-swipe .link-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.content-swipe .link-content a{
+color: white;
+align-items: center;
+display: flex;
+padding: 5px 15px;
+font-size: 20px;
+margin: 0px 5px;
+
+transition: 0.5s ease-in-out;
+}
+.content-swipe a:hover{
+ background-color: white;
+   border-radius: 6px;
+   color: navy;
+   font-weight: 600;
+  
+}
+ .swiper-button-prev{
+color: white;
+
+padding: 10px;
+left: 10rem;
+}
+.swiper-button-next{
+    color:white;
+
+    padding: 10px;
+  right: 10rem;
+    }
+    .swiper-pagination{
+       color: white;
+     margin-top: 5px;
+    }
+
+    @media screen and (max-width:770px){
+        .links{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: beige;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 5px 10px darkgrey;
+            transition: all 0.5s;
+            z-index: 2000;
+        }
+        .links a{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 30px;
+            color: darkslategrey;
+        }
+        .links.show{
+            left: 0;
+        }
+        nav .icon {
+            display: block;
+        }
+
+        .skill-con{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .members-con{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .servi-con{
+            width: 100%;
+            display: flex;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            margin-bottom: 0;
+        }
+        .services{
+            height: auto;
+        }
+        .swiper-slide img{
+            width: 500px;
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .swiper-button-prev{
+           
+            left: 30px;
+            /* bottom: 25px; */
+            font-size: 0.5rem;
+            }
+            .swiper-button-next{
+               
+              right: 30px;
+              /* top: 250px; */
+              font-size: 0.5rem;
+                }
+                .content-swipe a{
+                    margin-bottom: 30px;
+                    background-color: white;
+                    /* color: navy; */
+                    border-radius: 6px;
+                }
+                .content-swipe .link-content a{
+                    font-size: 15px;
+                    color: navy;
+                }
+    }
+
+    @media screen and (max-width:480px) {
+        .intro{
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .intro h2{
+            font-size: 25px;
+            text-align: center;
+        }
+        .intro-img img{
+            margin-top: -80px;
+            width: 100%;
+        }
+        .contact-box{
+            width: 100%;
+            margin-top: -30px;
+        }
+        .contact-box h2{
+            font-size: 1rem;
+        }
+        .skills h3{
+            font-size: 1.5rem;
+        }
+        .skill-con{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .servi-con{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+        .services{
+            height: auto;
+        }
+        .members-con{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .swiper-slide{
+            width: 100%;
+        }
+        .swiper-slide img{
+            width: 270px;
+            height: 140px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .swiper-button-prev{
+           
+            left: 10px;
+            top: 100px;
+            font-size: 0.5rem;
+            }
+            .swiper-button-next{
+               
+              right: 10px;
+              top: 100px;
+              font-size: 0.5rem;
+                }
+                .content-swipe a{
+                    margin-bottom: 30px;
+                    background-color: white;
+                    /* color: navy; */
+                    border-radius: 6px;
+                }
+                .links a{
+                    font-size: 22px;
+                }
+                .content-swipe .link-content a{
+                    font-size: 15px;
+                    color: navy;
+                }
+                .content-swipe h2{
+                    font-size: 25px;
+                }
+                .project-title h2{
+                    text-align: center;
+                    font-size: 30px;
+                }
+                .project-title{
+                    margin: 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+    
+    }
