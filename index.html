@@ -257,7 +257,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.6.1.js"></script> -->
      
 <script>
  var swiper = new Swiper(".mySwiper", {
@@ -274,11 +274,17 @@
    },
  });
 
- $(document).ready(function(){
-            $('.nav-openbtn').click(function(){
-                $('.links').toggleClass('show')
-            })
-        })
+const hamburger = document.querySelector('.hamburger');
+const hamburger_icon = hamburger.querySelector('span');
+const mobile_menu = document.querySelector('.mobile-menu');
+
+hamburger.addEventListener('click', () => {
+    hamburger_icon.innerText = hamburger_icon.innerText === 'menu'
+    ? 'close'
+    : 'menu';
+
+    mobile_menu.classList.toggle('is-open')
+})
 </script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
