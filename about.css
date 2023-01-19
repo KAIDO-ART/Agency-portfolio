@@ -11,58 +11,99 @@ html{
     scroll-behavior: smooth;
 }
 nav{
-    width: 100%;
-    
-    
+    position: relative;
+    z-index: 99;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-  
-    border-bottom: 3px solid navy;
-
+    background-color: white;
+    color: black;
+    padding: 1rem 1.5rem;
+    box-shadow:  5px 5px 10px  lightgray;
 }
-.image{
-    display: flex;
+nav img{
+    width: 180px;
+}
+.menu{
+    display: none;
     align-items: center;
-}
-.image img{
-    width: 160px;
-}
-.links{
-    display: flex;
-    align-items: center;
+    margin: 0 -1rem;
 
 }
-.links a{
-    margin: 20px;
-    font-size: 17px;
-    color: darkslategray;
-    padding: 5px 20px;
-    transition: 0.5s ease-in-out;
-    border-radius: 6px;
+.menu a{
+    margin: 0 1rem;
+    color: navy;
+    transition: 0.3s;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 
 }
-.links a:nth-child(4){
-    margin: 0;
+.menu a:hover{
+    color: whitesmoke;
+    background: linear-gradient(71deg, rgba(0,8,78,1) 42%, rgba(0,69,255,1) 90%);
+   
 }
-.links a:hover{
-  
+.hamburger{
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+
+}
+.hamburger span{
+    color: navy;
+    font-size: 2rem;
+}
+.mobile-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+    padding-top: 6rem;
+    
+    opacity: 0;
     background: linear-gradient(71deg, rgba(0,8,78,1) 42%, rgba(0,69,255,1) 90%);
     color: white;
- 
+    transform: translateY(-100%);
+    transition: 0.3s;
 }
-nav .icon{
-    display: none;
+.mobile-menu.is-open{
+    opacity: 1;
+    transform: translateY(0);
 }
-nav .icon .nav-openbtn{
-color: black;
-font-size: 30px;
+.mobile-menu a{
+    display: block;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: 0.3s;
 
 }
-.chat{
-    background: navy;
-    color: white !important;
+.mobile-menu a:hover{
+    color: navy;
+    background: linear-gradient(71deg, rgba(157,157,157,1) 42%, rgba(240,240,240,1) 90%);;
+}
+
+@media (min-width: 770px) {
+    .mobile-menu, .hamburger{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
 }
 
 .about-DM{
