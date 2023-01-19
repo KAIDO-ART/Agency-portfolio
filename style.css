@@ -565,6 +565,11 @@ left: 10rem;
     font-size: 30px;
     color: lightslategray;
        }   
+        .skill-name p{
+    font-size: 15px;
+    font-weight: 600;
+    color: darkblue;
+       }
         .servi-con{
             width: 100%;
             display: flex;
